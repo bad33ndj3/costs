@@ -27,6 +27,7 @@ func (s *ToRatio) Fill(cost Costs) {
 func (s *ToRatio) Render() {
 	t := table.NewWriter()
 	t.SetOutputMirror(os.Stdout)
+	t.SetStyle(table.StyleBold)
 	t.AppendHeader(table.Row{"#", "income", "Inc. Ratio", "Pays"})
 	t.AppendRows([]table.Row{
 		{1, s.Person1.Round(2).String(), s.percentageOfIncome1.Round(2).String(), s.expensesToRatio1.Round(2).String()},
