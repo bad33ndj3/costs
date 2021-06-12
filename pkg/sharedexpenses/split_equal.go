@@ -21,6 +21,7 @@ func (s *SplitEqual) Fill(cost Costs) {
 func (s *SplitEqual) Render() {
 	t := table.NewWriter()
 	t.SetOutputMirror(os.Stdout)
+	t.SetStyle(table.StyleBold)
 	t.AppendHeader(table.Row{"#", "income", "Pays"})
 	t.AppendRows([]table.Row{
 		{1, s.Person1.Round(2).String(), s.dividedExpenses.Round(2).String()},
