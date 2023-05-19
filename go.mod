@@ -5,7 +5,7 @@ go 1.19
 require (
 	github.com/jedib0t/go-pretty/v6 v6.2.2
 	github.com/shopspring/decimal v1.3.1
-	github.com/stretchr/testify v1.8.1
+	github.com/stretchr/testify v1.8.3
 )
 
 require (
